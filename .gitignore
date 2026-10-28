@@ -1,0 +1,26 @@
+# Secrets / local config (never commit your real API key)
+.config.json
+.env
+.env.*
+
+# Input / output (keep the folders, ignore their contents)
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+ENV/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+#markitdown
+markitdown

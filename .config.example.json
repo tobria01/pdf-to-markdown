@@ -1,0 +1,17 @@
+{
+  "api": {
+    "base_url": "https://api.openai.com/v1",
+    "api_key": "YOUR_API_KEY_HERE",
+    "model": "your-model-name",
+    "max_retries": 5
+  },
+  "processing": {
+    "input_directory": "input",
+    "output_directory": "output",
+    "llm_prompt": "You are analyzing an image extracted from a document. Transcribe all text exactly as shown. If the image is a diagram, chart, or figure, describe its components, connections, labels, and spatial layout in a structured way. If it contains math or formulas, write them in plain text notation (e.g., E[T_R] = 1/(mu_R - b_R)). Return only the transcription and description, nothing else.",
+    "cleanup_enabled": true,
+    "cleanup_mode": "llm",
+    "cleanup_auto_threshold": 0.5,
+    "cleanup_max_workers": 8
+  }
+}
